@@ -2,13 +2,13 @@
 
 - name: variables from promt
   hosts: web
-  vars:
+  vars_prompt:
     - name: USERNAME
       prompt: Please enter your user name
       private: false
     - name: PASSWORD
       prompt: Please enter your password
-      private: yes
+      private: true
   tasks:
   - name: Printing values from Promt entry
     ansible.builtin.debug:

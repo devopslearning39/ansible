@@ -10,5 +10,6 @@
       ansible.builtin.service:
         name: nginx
         state: started
+    - name: checking status of nginx
       ansible.builtin.debug:
         msg: "Successfully inastlled and running nginx server"

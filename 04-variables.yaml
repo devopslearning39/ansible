@@ -7,7 +7,6 @@
     trainer: "siva"
     duration: "110 hrs"
   tasks:
-
   - name: checking variables
     ansible.builtin.debug:
       msg: "Learning course is {{course}} trainer is {{trainer}} and duration is {{duration}}"

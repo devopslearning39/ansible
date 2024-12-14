@@ -1,8 +1,9 @@
 #  play level variables
+
 - name: variables from play level
   hosts: localhost
   vars:
-    coures: "devops"
+    course: "devops"
     trainer: "siva"
     duration: "110 hrs"
   tasks:

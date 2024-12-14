@@ -1,0 +1,16 @@
+# creating roboshop is if already is not there
+
+- name: Playbook
+  hosts: web
+  become: true
+  tasks:
+    - name: checking roboshop user is there or not
+      ansible.builtin.command: id roboshop
+      register: user
+      ignore_errors: true
+    - name: getting output of roboshop id
+      ansible.builtin.debug:
+        msg: "User output is {{user}}"
+    
+
+    

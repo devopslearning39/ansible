@@ -1,7 +1,7 @@
 #  Getting varibles from promt
 
 - name: variables from promt
-  hosts: localhost
+  hosts: web
   vars:
     - name: USERNAME
       prompt: Please enter your user name
@@ -11,5 +11,5 @@
       private: yes
   tasks:
   - name: Printing values from Promt entry
-    ansible.built.debug:
+    ansible.builtin.debug:
       msg: "User name is {{USERNAME}} and Password is {{PASSWORD}}"

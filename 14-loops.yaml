@@ -15,7 +15,7 @@
 
     - name: Displaying installed package
       ansible.builtin.debug:
-        msg: "Successfully installed package {{ item }}"
+        msg: "Successfully installed package {{item}}"
       loop:
         - git
         - postfix

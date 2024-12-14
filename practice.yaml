@@ -13,4 +13,4 @@
 - name: Prinitng success message
   tasks:
     ansible.builtin.debug:
-      msg: "Successfully inastlled and started nginx server"
+      msg: "Successfully inastlled and running nginx server"

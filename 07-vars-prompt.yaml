@@ -1,7 +1,7 @@
 #  Getting varibles from promt
 
 - name: variables from promt
-  hosts: web
+  hosts: localhost
   vars:
     - name: USERNAME
       prompt: Please enter your user name

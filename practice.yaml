@@ -7,6 +7,6 @@
     trainer: "siva"
     duration: "110 hrs"
   tasks:
-    - name: knowing cousre details..
-      ansible.builtin.debug:
-        msg: "Learning course is {{course}}, trainer name is {{trainer}} and duration is {{duration}}"
+  - name: knowing cousre details..
+    ansible.builtin.debug:
+      msg: "Learning course is {{course}}, trainer name is {{trainer}} and duration is {{duration}}"

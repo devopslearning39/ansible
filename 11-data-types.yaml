@@ -1,0 +1,32 @@
+#  All data types
+
+- name: All data types
+  hosts: web
+  vars:
+    name: "Praveen"
+    skills:
+      - Civil engine
+      - QA
+      - DevOps engineer
+    experience:
+      Civil: 2
+      QA: 1
+      DevOps: 2
+    is expert: true
+  
+  tasks:
+    - name: displaying key, value
+    ansible.builtin.debug:
+      msg "Name is {{name}}"
+
+    - name: displaying list
+      ansible.builtin.debug:
+        msg "Having skill are"
+
+    - name: displaing map
+      ansible.builtin.debug:
+        msg "Having experience is about "
+
+    - name: displaying boolean
+      ansible.builtin.debug:
+        msg "His expert right "

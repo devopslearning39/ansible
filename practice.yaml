@@ -11,5 +11,5 @@
         name: nginx
         state: started
 - name: Prinitng success message
-    ansible.builtin.debug:
-      msg: "Successfully inastlled and started nginx server"
+  ansible.builtin.debug:
+    msg: "Successfully inastlled and started nginx server"

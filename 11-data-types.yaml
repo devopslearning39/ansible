@@ -3,7 +3,7 @@
 - name: All data types
   hosts: web
   vars:
-    name: "Praveen"
+    NAME: "Praveen"
     skills:
       - Civil engine
       - QA
@@ -17,7 +17,7 @@
   tasks:
     - name: displaying key, value
       ansible.builtin.debug:
-        msg "Name is {{name}}"
+        msg "Name is {{NAME}}"
 
     - name: displaying list
       ansible.builtin.debug:

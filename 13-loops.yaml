@@ -1,12 +1,12 @@
 #  Displaying multiple users using loops
 
 - name: Displaying multiple users using loop
-    hosts: web
-    tasks:
-      ansible.builtin.debug:
-        msg: "Hello {{item}}"
-      loop:
-      - ramesh
-      - suresh
-      - praveen
-      - anil
+  hosts: web
+  tasks:
+    ansible.builtin.debug:
+      msg: "Hello {{item}}"
+    loop:
+    - ramesh
+    - suresh
+    - praveen
+    - anil

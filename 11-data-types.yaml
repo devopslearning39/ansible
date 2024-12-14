@@ -15,18 +15,18 @@
     Talented: true
   
   tasks:
-    - name: displaying key, value
-      ansible.builtin.debug:
-        msg "Name is {{NAME}}"
+  - name: displaying key, value
+    ansible.builtin.debug:
+      msg "Name is {{NAME}}"
 
-    - name: displaying list
-      ansible.builtin.debug:
-        msg "Having skill are {{skills}}"
+  - name: displaying list
+    ansible.builtin.debug:
+      msg "Having skill are {{skills}}"
 
-    - name: displaing map
-      ansible.builtin.debug:
-        msg "Having experience is about {{experience}}"
+  - name: displaing map
+    ansible.builtin.debug:
+      msg "Having experience is about {{experience}}"
 
-    - name: displaying boolean
-      ansible.builtin.debug:
-        msg "His expert right {{is expert}}"
+  - name: displaying boolean
+    ansible.builtin.debug:
+      msg "His expert right {{Talented}}"

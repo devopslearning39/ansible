@@ -17,7 +17,7 @@
   tasks:
   - name: displaying key, value
     ansible.builtin.debug:
-      msg: "Naame is {{NAME}}"
+      msg: "Name is {{NAME}}"
 
   - name: displaying list
     ansible.builtin.debug:

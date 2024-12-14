@@ -1,12 +1,12 @@
 # Varibles accessing
 
 - name: Playing with variables
-    hosts: web
-    vars:
-      course: "devops"
-      trainer: "siva"
-      duration: "110 hrs"
-    tasks:
-      - name: knowing cousre details..
-        ansible.builtin.debug:
-          msg: "Learning course is {{devops}}, trainer name is {{trainer}} and duration is {{duration}}"
+  hosts: web
+  vars:
+    course: "devops"
+    trainer: "siva"
+    duration: "110 hrs"
+  tasks:
+    - name: knowing cousre details..
+      ansible.builtin.debug:
+        msg: "Learning course is {{devops}}, trainer name is {{trainer}} and duration is {{duration}}"

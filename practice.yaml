@@ -5,6 +5,5 @@
   vars_files:
   - variables.yaml
   tasks:
-    - name: task1
-      ansible.builtin.debug:
-        msg: "Learning technology is {{course}}"
+    ansible.builtin.debug:
+      msg: "Learning technology is {{course}}"

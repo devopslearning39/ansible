@@ -17,7 +17,7 @@
       ansible.builtin.debug:
         msg: "Successfully installed package {{item}}"
       loop:
-        - git
-        - postfix
-        - nginx
-        - mysql
+      - git
+      - postfix
+      - nginx
+      - mysql

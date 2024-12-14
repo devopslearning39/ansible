@@ -1,14 +1,14 @@
-# multiple playbooks
+#  Inheritence/overriding assigned varible
 
-- name: this is playbook-1
+- name: variables from playbook level
   hosts: web
+  vars:
+    course: "devops"
+    trainer: "siva"
+    duration: "110 hrs"
   tasks:
-    - name: task1 from playbook1
+    - name: variables from task level
+      vars:
+        course: "DevOps with aws cloud"
       ansible.builtin.debug:
-        msg: "Praveen this is from play1, task1"
-- name: this is playbook-2
-  hosts: web
-  tasks:
-    - name: task1 from playbook2
-      ansible.builtin.debug:
-        msg: "Praveen this is from play2, task1"
+        msg: "Learing technology is {{course}}, trainer is {{trainer}} and duration is {{duration}}"

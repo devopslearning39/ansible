@@ -16,17 +16,17 @@
   
   tasks:
     - name: displaying key, value
-    ansible.builtin.debug:
+      ansible.builtin.debug:
       msg "Name is {{name}}"
 
     - name: displaying list
       ansible.builtin.debug:
-        msg "Having skill are"
+        msg "Having skill are {{skills}}"
 
     - name: displaing map
       ansible.builtin.debug:
-        msg "Having experience is about "
+        msg "Having experience is about {{experience}}"
 
     - name: displaying boolean
       ansible.builtin.debug:
-        msg "His expert right "
+        msg "His expert right {{is expert}}"

@@ -8,7 +8,7 @@
         state: present
     - name: Displaying installed package
       ansible.builtin.debug:
-        msg: "Successfully installed package is "{{item}}" "
+        msg: "Successfully installed package is {{ item }}"
       loop:
       - git
       - postfix

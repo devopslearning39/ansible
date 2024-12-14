@@ -6,7 +6,7 @@
       msg: "Hello from play1 and task1"
 
 - name: PLAY-2
-  hosts: localhist
+  hosts: localhost
   tasks:
   - name: play-2 and task-2
     ansible.builtin.debug:

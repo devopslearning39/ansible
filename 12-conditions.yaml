@@ -1,6 +1,6 @@
-# creating roboshop if user is doesn't exist
+# creating roboshop user if user is doesn't exist
 
-- name: creating roboshop if user is doesn't exist
+- name: creating roboshop user if user is doesn't exist
   hosts: web
   become: true
   tasks:

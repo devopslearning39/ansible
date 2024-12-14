@@ -1,0 +1,10 @@
+- name: ALl users
+  hosts: web
+  tasks:
+    - name: Displaying all users
+      ansible.builtin.debug:
+        msg: "{{item}}"
+      loop:
+      - praveen
+      - anil
+      

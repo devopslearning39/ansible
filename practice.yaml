@@ -1,12 +1,14 @@
-# Varibles accessing
+# multiple playbooks
 
-- name: Playing with variables
+- name: this is playbook-1
   hosts: web
-  vars:
-    course: "devops"
-    trainer: "siva"
-    duration: "110 hrs"
   tasks:
-  - name: knowing cousre details..
+    - name: task1 from playbook1
     ansible.builtin.debug:
-      msg: "Learning course is {{course}}, trainer name is {{trainer}} and duration is {{duration}}"
+      msg: "Praveen this is from play1, task1"
+- name: this is playbook-2
+  hosts: web
+  tasks:
+    - name: task1 from playbook2
+    ansible.builtin.debug:
+      msg: "Praveen this is from play2, task1"

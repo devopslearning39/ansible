@@ -7,10 +7,17 @@
         name: "{{item}}"   # item is default keyword
         state: present
     - name: Displaying installed package
-      ansible.builtin.debug:
-        msg: 'Successfully installed package is "{{item}}" '
       loop:
       - git
       - postfix
       - nginx
       - mysql
+
+    - name: Displaying installed package
+      ansible.builtin.debug:
+        msg: "Successfully installed package {{ item }}"
+      loop:
+        - git
+        - postfix
+        - nginx
+        - mysql

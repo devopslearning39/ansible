@@ -5,5 +5,6 @@
   vars_files:
   - variables.yaml
   tasks:
+  - name: Getting variables from another file
     ansible.builtin.debug:
       msg: "Learning technology is {{course}}"

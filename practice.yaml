@@ -1,14 +1,10 @@
-#  Inheritence/overriding assigned varible
+#  Accessing variables from another file
 
-- name: variables from playbook level
+- name: This is playbook level
   hosts: web
-  vars:
-    course: "devops"
-    trainer: "siva"
-    duration: "110 hrs"
+  vars_files:
+  - variables.yaml
   tasks:
-    - name: variables from task level
-      vars:
-        course: "DevOps with aws cloud"
+    - name: task1
       ansible.builtin.debug:
-        msg: "Learing technology is {{course}}, trainer is {{trainer}} and duration is {{duration}}"
+        msg: "Learning technology is {{course}}"

@@ -1,6 +1,6 @@
 - name: Variables from play
   hosts: localhost
-  var_files:
+  vars_files:
   - variables.yaml
   tasks:
   - name: getting variables from another source file

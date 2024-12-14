@@ -2,21 +2,22 @@
 
 - name: Playbook
   hosts: web
+  become: true
   tasks:
   - name: Getting/fetching roboshop user data
     ansible.builtin.command: id roboshop
-    register: roboshop_info
+    register: user  #user is a varible name here
     ignore_errors: true
   
   - name: displaying roboshop user details
     ansible.builtin.debug:
-      msg: "Roboshop user info is {{roboshop_info}}"
+      msg: "Roboshop user info is {{user}}"
 
   - name: displaying roboshop user return code (exit status)
     ansible.builtin.debug:
-      msg: "Return code of Roboshop user is {{roboshop_info.rc}}"
+      msg: "Return code of Roboshop user is {{user.rc}}"
 
   - name: creating roboshop user if already not there
     ansible.builtin.user:
       name: roboshop
-    when: roboshop_info.rc != 0
+    when: user.rc != 0

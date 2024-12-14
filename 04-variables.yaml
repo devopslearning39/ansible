@@ -1,13 +1,13 @@
-# play level variables
+#  play level variables
 
-- name: cheking variables
+- name: variables from play level
   hosts: localhost
   vars:
-    course: "devops"
+    coures: "devops"
     trainer: "siva"
     duration: "110 hrs"
-
   tasks:
+
   - name: checking variables
     ansible.builtin.debug:
-      msg: "Learing course is {{course}} trainer is {{trainer}} duration is {{duration}}"
+      msg: "Learning course is {{course}} trainer is {{trainer}} and duration is {{duration}}"

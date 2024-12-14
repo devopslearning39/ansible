@@ -12,7 +12,7 @@
       Civil: 2
       QA: 1
       DevOps: 2
-    is expert: true
+    Talented: true
   
   tasks:
     - name: displaying key, value

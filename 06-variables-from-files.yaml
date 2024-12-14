@@ -1,0 +1,9 @@
+- name: Variables from play
+  hosts: localhost
+  var_files:
+  - variables.yaml
+  tasks:
+  - name: getting variables from another source file
+    tasks:
+    ansible.builtin.debug:
+      msg: "we are learning {{course}} trainer is {{trainer}} duration is {{duration}}"

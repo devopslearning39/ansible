@@ -1,6 +1,6 @@
 # creating roboshop if user is doesn't exist
 
-- name: Playbook
+- name: creating roboshop if user is doesn't exist
   hosts: web
   become: true
   tasks:

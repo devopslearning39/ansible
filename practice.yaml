@@ -1,5 +1,15 @@
-- name: ping playbook
+- name: install and run nginx
   hosts: web
+  become: yes
   tasks:
-    - name: ping the server
-      ansible.builtin.ping:
+    - name: installing nginx
+      ansible.builtin.package:
+        name: nginx
+        state: present
+    - name: run nginx
+      ansible.builtin.service:
+        name: nginx
+        state: started
+- name: Prinitng success message
+    ansible.builtin.debug:
+      msg: "Successfully inastlled and started nginx server"
